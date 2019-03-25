@@ -16,10 +16,12 @@ class Owner
        @@owners.length
      end
 
-    def initialize(species, pets = {:fishes => [], :dogs => [], :cats => []})
+    def initialize(species, pets)
       @species = species
       @pets = pets
       @@owners << self
+      @pets = {:fishes => [], :cats => [], :dogs => []}
+
     end
 
     def say_species
