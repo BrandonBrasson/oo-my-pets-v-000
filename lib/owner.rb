@@ -16,7 +16,7 @@ class Owner
        @@owners.length
      end
 
-    def initialize(species, pets)
+    def initialize(species)
       @species = species
       @pets = pets
       @@owners << self
