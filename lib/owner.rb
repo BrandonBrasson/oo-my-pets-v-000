@@ -4,6 +4,18 @@ class Owner
 
     @@owners = []
 
+    def self.all
+       @@owners
+     end
+
+     def self.reset_all
+       @@owners.clear
+     end
+
+     def self. count
+       @@owners.length
+     end
+     
     def initialize(species, pets = {:fishes => [], :dogs => [], :cats => []})
       @species = species
       @pets = pets
