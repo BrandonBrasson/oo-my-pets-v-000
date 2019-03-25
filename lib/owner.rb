@@ -15,7 +15,7 @@ class Owner
      def self.count
        @@owners.length
      end
-     
+
     def initialize(species, pets = {:fishes => [], :dogs => [], :cats => []})
       @species = species
       @pets = pets
